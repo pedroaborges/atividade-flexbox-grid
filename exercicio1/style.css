@@ -1,0 +1,40 @@
+        * {
+            box-sizing: border-box;
+        }
+
+        .container {
+            width: 60%;
+            height: 90px;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+            background-color: white;
+            display: flex;
+            justify-self: center;
+            flex-direction: row;
+            justify-content: center;
+            gap: 2rem;
+            align-items: center;
+            padding: 20px;
+            color:black;
+            font-family: "Poppins";
+            border-radius: 10px;
+        }
+
+        .item {
+            padding: 0.5rem;
+        }
+
+        .item:hover {
+            background-color: #2479E5;
+            color: white;
+            border-radius: 5px;
+        }
+
+        .itemLogo {
+            color: white;
+            background-color: #F7C12D;
+            padding: 0.5rem 1.5rem;
+            border-radius: 5px;
+        }
+
+
+        
