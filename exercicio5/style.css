@@ -1,0 +1,99 @@
+* {
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+.logo {
+    color: white;
+    background-color: #F8B92A;
+    padding: 0.5rem 1.5rem;
+    border-radius: 10px;
+    justify-content: flex-start;
+    margin-left: 2rem;
+}
+
+.navbar {
+    border-radius: 10px;
+    display: flex;
+    background-color: #387EEA;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.menu  {
+    display: flex;
+    list-style: none;
+    gap: 2rem;
+    margin-right: 3rem;
+    font-size: large;
+}
+
+.menu a:hover {
+    background-color: #2478EC;
+    border-radius: 10px;
+    padding: 0.5rem 1.5rem;
+}
+
+.menu a {
+    text-decoration: none;
+    color: white;
+}
+
+.main {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.content {
+    color: #53555A;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    margin-right: 1rem;
+    background-color: #F5F7FA;
+    border-radius: 10px;
+}
+
+.content h1, p, button{
+    margin-left: 1rem;
+    margin-bottom: 1rem;
+}
+
+.button {
+    font-size: large;
+    padding: 0.5rem 1.5rem;
+    border-radius: 10px;
+    color: white;
+    background-color: #F8B92A;
+    border-style: none;
+}
+
+.sideBar {
+    color: #53555A;
+    background-color: #F0F0F1;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    border-radius: 10px;
+}
+
+.sideBar h2, ul{
+    margin-left: 1rem;
+    list-style: none;
+}
+
+.sideBar h2{
+    padding-left: 2.3rem;
+}
+
+.sideBar a{
+    text-decoration: none;
+    color: #53555A;
+}
+
+.footer {
+    color: white;
+    background-color: #676877;
+    padding: 0.5rem 1.5rem;
+    font-size: large;
+    border-radius: 10px;
+    justify-items: center;
+}
