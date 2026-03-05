@@ -1,57 +1,68 @@
-        * {
-            box-sizing: border-box;
-            padding: 0%;
-            margin: 0%;
-        }
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
 
-        .container {
-            width: 60vw;
-            margin: 40px auto;
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            grid-template-rows: repeat(2, 0.35fr);
-            gap: 10px;
-        }
+body {
+    font-family: sans-serif;
+}
 
-        .item {
-            border-radius: 12px;
-            overflow: hidden;
-        }
+.posts {
+    width: 60vw;
+    margin: 40px auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 250px);
+    gap: 10px;
+}
 
-        .im1 {
-            grid-column: 1 / 2;
-        }
+.post {
+    position: relative;
+    border-radius: 12px;
+    overflow: hidden;
+}
 
-        .im2 {
-            grid-column: 2 / 4;
-            grid-row: 1 / 2;
+.im1 {
+    grid-column: 1 / 2;
+}
 
-        }
+.im2 {
+    grid-column: 2 / 4;
+}
 
-        .im3 {
-            grid-column: 1 / 3;
-            grid-row: 2 / 3;
+.im3 {
+    grid-column: 1 / 3;
+    grid-row: 2 / 3;
+}
 
-        }
+.im4 {
+    grid-column: 3 / 4;
+    grid-row: 2 / 3;
+}
 
-        .im4 {
-            grid-column: 3 / 4;
-            grid-row: 2 / 3;
+.post img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
 
-        }
+.post::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.4);
+}
 
-        .imagem {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
+.post-header {
+    position: absolute;
+    top: 1rem;
+    left: 1rem;
+    z-index: 1;
+    color: white;
+}
 
-        }
-
-        .top {
-            font-family: sans-serif;
-            font-weight: bold;
-            position: absolute;
-            margin-left: 1rem;
-            margin-top: 1rem;
-            color: white;
-        }
+.post-header h2 {
+    font-size: 1.2rem;
+}

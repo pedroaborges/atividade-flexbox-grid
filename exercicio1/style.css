@@ -1,37 +1,45 @@
-        * {
-            box-sizing: border-box;
-        }
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
 
-        .container {
-            width: 60%;
-            height: 90px;
-            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-            background-color: white;
-            display: flex;
-            justify-self: center;
-            flex-direction: row;
-            justify-content: center;
-            gap: 2rem;
-            align-items: center;
-            padding: 20px;
-            color: black;
-            font-family: "Poppins";
-            border-radius: 10px;
-        }
+.container {
+    width: 60%;
+    height: 90px;
+    margin: 40px auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    font-family: "Poppins", sans-serif;
+    border-radius: 10px;
+}
 
-        .item {
-            padding: 0.5rem;
-        }
+.menu {
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+}
 
-        .item:hover {
-            background-color: #2479E5;
-            color: white;
-            border-radius: 5px;
-        }
+.menu a {
+    text-decoration: none;
+    color: black;
+    padding: 0.5rem;
+}
 
-        .itemLogo {
-            color: white;
-            background-color: #F7C12D;
-            padding: 0.5rem 1.5rem;
-            border-radius: 5px;
-        }
+.menu a:hover {
+    background-color: #2479E5;
+    color: white;
+    border-radius: 5px;
+}
+
+.logo {
+    background-color: #F7C12D;
+    padding: 0.5rem 1.5rem;
+    border-radius: 5px;
+    color: white;
+    font-size: 1.2rem;
+}
